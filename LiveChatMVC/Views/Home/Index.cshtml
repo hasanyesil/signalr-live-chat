@@ -1,0 +1,55 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="~/Content/css/ui.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div id="chat-window" class="chatbox chatbox22 chatbox--tray">
+                <div id="chat-title" class="chatbox__title">
+                    <h5 id="title"><a href="#">Leave a message</a></h5>
+                    <div id="message-alert" style="display:none">
+                        <i class="fas fa-comments alert-icon" id="icon"></i>
+                        <span id="message-count" class="badge badge-danger p-1 message-count"></span>
+                    </div>
+                </div>
+                <div class="chatbox__body" id="chat_body">
+                    <div id="new-message-alert">
+                        <i class="fas fa-sort-amount-down"></i>
+                        <span class="badge badge-success" id="unread-message-count">2</span>
+                    </div>
+                </div>
+                <div class="panel-footer message-footer">
+                    <div class="input-group">
+                        <input id="btn-input" type="text" class="form-control input-sm chat_set_height" placeholder="Type your message here..." tabindex="0" dir="ltr" spellcheck="false" autocomplete="off" autocorrect="off" autocapitalize="off" contenteditable="true" />
+
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary btn-sm" id="btn-chat" style="padding:10px">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery.signalR-2.4.1.min.js"></script>
+    <script src="~/signalr/hubs/"></script>
+    <script src="~/Scripts/moment.min.js"></script>
+    <script src="~/Scripts/script.js"></script>
+</body>
+</html>
